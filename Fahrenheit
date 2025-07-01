@@ -1,8 +1,16 @@
-public class Colecionar {
-    public static void main(String[] args) {
+import java.util.Scanner;
 
-                int temperatura = 24;
-                double fahrenheit = temperatura * 1.8 + 32;
-                System.out.println("A temperatura em Fahrenheit é: " + fahrenheit);
-            }
-        }
+public class CelsiusParaFahrenheit {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a temperatura em Celsius: ");
+        double temperatura = scanner.nextDouble();
+
+        double fahrenheit = temperatura * 1.8 + 32;
+
+        System.out.println("Temperatura em Fahrenheit: " + fahrenheit);
+
+        scanner.close();
+    }
+}
